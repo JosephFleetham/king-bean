@@ -31,3 +31,33 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  background-image: url("./assets/wormz.png");
+
+}
+
+#topnav {
+  background-image: url("./assets/wormz.png");
+
+  background-color: white;
+}
+
+#homeboxcontact {
+  /* margin: 0px 500px 0px 500px;; */
+  background-image: url("./assets/memphis-mini.png");
+
+}
+
+#homeboxabout {
+  /* margin: 0px 0px 0px 1000px;; */
+  background-image: url("./assets/memphis-mini.png");
+
+}
+
+
+
+#logo img {
+  margin: -70px -60px -65px -70px;
+  height: 200px;
+}

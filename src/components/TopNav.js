@@ -31,13 +31,18 @@ class TopNav extends Component {
             <div id="navtext">
               <div className="ui large secondary pointing menu">
                 <a className="item">
-                  About King Bean
+                  <div id="logo">
+                    <img src="https://i.imgur.com/I4mggYx.png" alt="king bean" />
+                  </div>
                 </a>
                   <a className="item">
-                    Gallery
+                    About King Bean
                   </a>
                   <a className="item">
-                    .
+                    Products
+                  </a>
+                  <a className="item">
+                    Contact
                   </a>
                 <div className="column">
                 </div>
