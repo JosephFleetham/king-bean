@@ -1,6 +1,9 @@
 .App {
   text-align: center;
+  background-image: url("./assets/wormz.png");
 }
+
+
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -32,32 +35,24 @@
   }
 }
 
-body {
-  background-image: url("./assets/wormz.png");
-
-}
 
 #topnav {
   background-image: url("./assets/wormz.png");
-
-  background-color: white;
+  margin-bottom: -10px;
 }
 
-#homeboxcontact {
-  /* margin: 0px 500px 0px 500px;; */
+#body {
+  background-image: url("./assets/wormz.png");
+
+}
+
+
+#textbackground {
   background-image: url("./assets/memphis-mini.png");
-
+  margin: 0px 190px 0px 190px;
 }
-
-#homeboxabout {
-  /* margin: 0px 0px 0px 1000px;; */
-  background-image: url("./assets/memphis-mini.png");
-
-}
-
-
 
 #logo img {
   margin: -70px -60px -65px -70px;
-  height: 200px;
+  height: 180px;
 }
