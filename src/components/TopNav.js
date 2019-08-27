@@ -4,24 +4,16 @@ import '../App.css';
 import $ from 'jquery';
 
 class TopNav extends Component {
-  constructor() {
-    super();
-    this.state = {
-      dropdownOpen: false
-    };
+  constructor(props) {
+      super(props);
+      this.state = {
+        home: this.props.home,
+        about: this.props.about,
+        gallery: this.props.gallery
+      };
   }
   componentDidMount () {
-    console.log(this.state.dropdownOpen)
-  }
-  toggleForm(e) {
-    e.preventDefault();
-    this.setState({ dropdownOpen: !this.state.dropdownOpen });
-    if (this.state.dropdownOpen === true) {
-      $('#menu').slideUp();
-    }
-    else {
-      $('#menu').slideDown();
-    }
+
   }
   render() {
     return (
@@ -32,13 +24,13 @@ class TopNav extends Component {
               <div className="ui large secondary pointing menu">
                 <a className="item">
                   <div id="logo">
-                    <img src="https://i.imgur.com/I4mggYx.png" alt="king bean" />
+                    <img src="https://i.imgur.com/I4mggYx.png" alt="king bean" onClick={this.props.home}/>
                   </div>
                 </a>
-                  <a className="item">
+                  <a className="item" onClick={this.props.about}>
                     About King Bean
                   </a>
-                  <a className="item">
+                  <a className="item" onClick={this.props.gallery}>
                     Products
                   </a>
                   <a className="item">
