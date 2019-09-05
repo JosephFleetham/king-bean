@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css';
 import TopNav from './TopNav.js';
+import Item from './Item.js';
 
 
 class App extends Component {
@@ -11,11 +12,13 @@ class App extends Component {
         index : [],
         home: true,
         gallery: false,
-        about: false
+        about: false,
+        itemDetail: false
       };
       this.gallery = this.gallery.bind(this);
       this.home = this.home.bind(this);
       this.about = this.about.bind(this);
+      this.itemDetail = this.itemDetail.bind(this);
 
 
   }
@@ -27,16 +30,27 @@ class App extends Component {
     this.setState({
       home: true,
       gallery: false,
-      about: false
+      about: false,
+      itemDetail: false
     })
 
+  }
+
+  itemDetail() {
+    this.setState({
+      home: false,
+      gallery: false,
+      about: false,
+      itemDetail: true
+    })
   }
 
   gallery() {
     this.setState({
       home: false,
       gallery: true,
-      about: false
+      about: false,
+      itemDetail: false
     })
     console.log(this.state);
   }
@@ -45,7 +59,8 @@ class App extends Component {
     this.setState({
       home: false,
       gallery: false,
-      about: true
+      about: true,
+      itemDetail: false
     })
   }
   render() {
@@ -168,7 +183,7 @@ class App extends Component {
                     <div className="ui three stackable cards">
                       <div id="box">
                         <div id="imagecover">
-                          <img src='https://i.imgur.com/jESF2.jpg?1' alt="cover"></img>
+                          <img src='https://i.imgur.com/jESF2.jpg?1' alt="cover" onClick={this.itemDetail}></img>
                         </div>
                       </div>
                       <div id="box">
@@ -199,6 +214,28 @@ class App extends Component {
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      );
+    }
+    else if (this.state.itemDetail === true) {
+      return (
+        <div className="background">
+          <TopNav
+            home = {this.home}
+            gallery = {this.gallery}
+            about = {this.about}
+           />
+          <div className="pusher">
+            <div className="ui vertical masthead center aligned segment">
+              <div id="body">
+                <h1>
+                  Item Detail
+                </h1>
+                <Item />
+
               </div>
             </div>
           </div>
