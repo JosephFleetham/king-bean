@@ -31,7 +31,7 @@ class TopNav extends Component {
                     About King Bean
                   </a>
                   <a className="item" onClick={this.props.gallery}>
-                    Products
+                    Gallery
                   </a>
                   <a className="item">
                     Contact

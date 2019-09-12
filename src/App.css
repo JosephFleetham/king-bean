@@ -39,11 +39,11 @@
 #topnav {
   background-image: url("./assets/wormz.png");
 
+
 }
 
 #body {
   background-image: url("./assets/wormz.png");
-  margin-top: -13px;
 
 
 }
@@ -73,13 +73,12 @@
 
 #gallerybody {
   background-image: url("./assets/wormz.png");
-  margin: 0px 190px 0px 190px;
-  padding-left: 28px;
+  margin: 0px 150px 0px 150px;
+  padding-left: 110px;
 }
 
 #list {
-  margin-top: -4px;
-  padding: 50px 200px 50px 200px;
+  padding: 50px 100px 50px 110px;
 }
 
 #textbackground {
@@ -92,19 +91,7 @@
   height: 180px;
 }
 
-#itemcover {
-  margin: 40px;
-  display: inline-block;
-  position: relative;
-  background: #ffff;
-  width: 850px;
-  height: 800px;
-  border: 0px solid black;
-  box-shadow: 0 19px 38px rgba(0,0,0,.1), 0 15px 12px rgba(0,0,0,.12);
-  border-radius: 10px;
-  box-sizing: border-box;
-  margin-left: 25px;
-  margin-bottom: 0px;
-  overflow: hidden;
-  background-image: url("./assets/memphis-mini.png");
+
+#box {
+  padding: 0px 100px 0px 0px;
 }

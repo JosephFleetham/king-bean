@@ -2,13 +2,24 @@ import React, { Component } from 'react';
 import '../App.css';
 import TopNav from './TopNav.js';
 import Item from './Item.js';
+import ItemList from './ItemList.js';
 
 
 class App extends Component {
   constructor() {
       super();
       this.state = {
-        data: [],
+        items: [
+                {
+                  id: 1
+                },
+                {
+                  id: 2
+                },
+                {
+                  id: 3
+                }
+              ],
         index : [],
         home: true,
         gallery: false,
@@ -52,7 +63,6 @@ class App extends Component {
       about: false,
       itemDetail: false
     })
-    console.log(this.state);
   }
 
   about() {
@@ -175,46 +185,11 @@ class App extends Component {
             gallery = {this.gallery}
             about = {this.about}
            />
-          <div className="pusher">
-            <div className="ui vertical masthead center aligned segment">
-              <div id="body">
-                <div id ="gallerybody">
-                  <div id="list">
-                    <div className="ui three stackable cards">
-                      <div id="box">
-                        <div id="imagecover">
-                          <img src='https://i.imgur.com/jESF2.jpg?1' alt="cover" onClick={this.itemDetail}></img>
-                        </div>
-                      </div>
-                      <div id="box">
-                        <div id="imagecover">
-                          <img src='https://i.imgur.com/jESF2.jpg?1' alt="cover"></img>
-                        </div>
-                      </div>
-                      <div id="box">
-                        <div id="imagecover">
-                          <img src='https://i.imgur.com/jESF2.jpg?1' alt="cover"></img>
-                        </div>
-                      </div>
-                      <div id="box">
-                        <div id="imagecover">
-                          <img src='https://i.imgur.com/jESF2.jpg?1' alt="cover"></img>
-                        </div>
-                      </div>
-                      <div id="box">
-                        <div id="imagecover">
-                          <img src='https://i.imgur.com/jESF2.jpg?1' alt="cover"></img>
-                        </div>
-                      </div>
-                      <div id="box">
-                        <div id="imagecover">
-                          <img src='https://i.imgur.com/jESF2.jpg?1' alt="cover"></img>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+         <div className="pusher">
+           <div className="ui vertical masthead center aligned segment">
+              <ItemList
+                items={this.state.items}
+              />
             </div>
           </div>
         </div>

@@ -14,19 +14,20 @@ class Item extends Component {
   }
 
 
-  componentWillMount(){
-    console.log(this.props)
+  componentDidMount(){
+    console.log("item props", this.props)
   }
 
 
   render() {
       return (
         <div id="box">
-          <div id="itemcover">
+          <h1>{this.props.id}</h1>
 
-
-
+          <div id="imagecover">
+            <img src='https://i.imgur.com/jESF2.jpg?1' alt="cover"></img>
           </div>
+          <h2>PRICE</h2>
         </div>
       )
 
