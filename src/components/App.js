@@ -89,11 +89,10 @@ class App extends Component {
               <div id="textbackground">
                 <div className="ui text container">
                   <h1 className="ui header">
-                    King Bean
+                    <div id="homebanner">
+                      <img src={require("../assets/bean-banner.jpg")} alt="king bean"/>
+                    </div>
                   </h1>
-                  <h2>
-                    Portect Your Bean
-                  </h2>
                   <div id="textbox">
                   </div>
                   <div id="hometext">
@@ -101,6 +100,8 @@ class App extends Component {
                     </h2>
                   </div>
                 </div>
+                <br/>
+                <br/>
                 <div id="homeboxfeatured">
                   <h1> Featured Items </h1>
                     <div id="homegridfeatured">

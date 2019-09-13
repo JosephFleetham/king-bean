@@ -95,3 +95,8 @@
 #box {
   padding: 0px 100px 0px 0px;
 }
+
+#homebanner img {
+  height: 200px;
+  width: 500px;
+}
