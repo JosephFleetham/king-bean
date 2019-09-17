@@ -26,8 +26,9 @@ class ItemList extends Component {
     return (
       <div id="body">
         <div id ="gallerybody">
+          <h1>Gallery</h1>
           <div id="list">
-            <div className="ui three stackable cards">
+            <div className="ui two stackable cards">
               {items}
             </div>
           </div>
